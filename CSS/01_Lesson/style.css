@@ -1,0 +1,19 @@
+body{
+    font-size: 22px;
+}
+p{
+    color: purple;
+}
+.gray{
+    color: gray;
+}
+h1,h2{
+    color: blue;
+}
+.highlight{
+    text-transform: uppercase;
+    background-color: yellow;
+}
+main{
+    font-family: monospace;
+}
