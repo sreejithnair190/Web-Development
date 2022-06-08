@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+body {
+  font-size: 2rem;
+  padding: 5% 10%;
+  font-family: "Raleway", sans-serif;
+}
+
+ol{
+    /* list-style-type: none; */
+    list-style-type: lower-roman;
+    list-style-type: lower-alpha;
+}
+
+ul{
+    list-style-type: circle;
+    list-style-type: square;
+    /* list-style-image: url('./img/checkmark.png'); */
+    text-align: center;
+    list-style-position: inside;
+    line-height: 1.6;
+
+    /* list shortand */
+   /*  list-style:url('./img/checkmark.png') square inside; */
+    /* square is the fallback if image doesn't load for some reason */
+}
+
+/* li{
+    color: red;
+} */
+
+ul li{
+    color: red;
+}
+
+ul li:nth-child(2){
+    color:blue;
+}
+
+ul ::marker{
+    color: darkmagenta;
+    font-size: 1.3em;
+    font-family:fantasy;
+    content: "Only 5$ >> ";
+}
