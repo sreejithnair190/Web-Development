@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+/*Paragraph is a block level element so the background color willl take 100% width*/
+
+/* margin: 100px; */
+/*Margin ad padding can be applied to block level elements*/
+/* p {
+  background-color: lightblue;
+
+} */
+
+/* .opposite{
+    background-color: #333;
+    color: #fff;
+    margin-top: 100px;
+
+
+    padding: 4rem;
+    
+} */
+/*margin top/bottom  will not work on inline element*/
+/*padding will overal other*/
+
+/* .opposite {
+  background-color: #333;
+  color: #fff;
+  margin-top: 100px;
+  padding: 4rem;
+
+  display: inline-block;
+} */
+/*this display property will fix issue for inline elements*/
+
+ul{
+    list-style-type: none;
+    text-align: right;
+    background-color: #333;
+    padding: 0.5rem;
+}
+li{
+    display: inline-block;
+    margin-inline: 0.5rem;
+}
+
+li a,li a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+li a:hover,li a:focus{
+    text-decoration: underline;
+}
