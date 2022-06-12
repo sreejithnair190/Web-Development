@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  min-height: 100vh;
+  
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-auto-rows: 80px auto 50px;
+  grid-template-areas: 
+  "hd hd hd hd hd hd hd hd hd"
+  "mn mn mn mn mn mn mn sb sb"
+  "ft ft ft ft ft ft ft ft ft";
+  column-gap: 0.5rem;
+}
+
+.el{
+    background-color: rebeccapurple;
+    color: #fff;
+    display: grid;
+    place-content: center;
+}
+
+.header{
+    background-color: #f00;
+    grid-area: hd;
+}
+
+.sidebar{
+    background-color: #080;
+    grid-area: sb;
+}
+
+.footer{
+    background-color: #333;
+    grid-area: ft;
+}
+
+.container {
+  display: grid;
+
+  grid-area: mn;
+
+  min-height: 400px;
+  /* max-width: 50%; */
+
+  /* grid-auto-flow: row;
+    grid-auto-flow: column; */
+
+  /* grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(3,2fr 1fr);
+
+    grid-auto-columns: minmax(auto, 30%); */
+
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr 2fr);
+
+  grid-template-rows: minmax(150px, auto);
+
+  /* row-gap: 1em; */
+  /* column-gap: 1.5em; */
+  /* gap: 1em; */
+  /*gap: row column*/
+  /* gap: 1em 0.5em; */
+  gap: 1rem;
+}
+
+.box {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.box:first-child{
+    background-color: #00b;
+
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1/4;
+
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-row:1/3;
+
+    display: grid;
+
+    align-items: center;
+    justify-content: center;
+
+    /* place-content: align-items justify-content; */
+    place-content: end center;
+    place-content: center;
+}
+
+.box:nth-child(2){
+    background-color: #606;
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
